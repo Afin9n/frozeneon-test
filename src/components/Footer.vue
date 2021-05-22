@@ -1,10 +1,6 @@
 <template>
     <v-footer v-bind="localAttrs" :padless="padless">
-        <v-card
-                flat
-                tile
-                width="100%"
-                class="grey darken-2 text-center">
+        <v-card flat tile width="100%" class="grey darken-2 text-center">
             <v-card-text>
                 <div class="container footer__wrapper">
                     <div class="footer__info">
@@ -34,7 +30,6 @@
 
 <style lang="scss" scoped>
     .footer {
-
         &__wrapper {
             display: flex;
             align-items: center;

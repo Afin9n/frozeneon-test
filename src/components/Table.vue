@@ -5,9 +5,8 @@
                 :headers="headers"
                 :items="versions"
                 :items-per-page="10"
-                class="package-table"
-        ></v-data-table>
-
+                class="package-table">
+        </v-data-table>
         <DetailsModal @dialogClose="dialogClose" :dialog="dialog"></DetailsModal>
     </div>
 </template>

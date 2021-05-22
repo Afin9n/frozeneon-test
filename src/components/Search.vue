@@ -1,9 +1,7 @@
 <template>
     <div class="search-block">
-            <v-text-field label="Enter package name" @keyup.enter.native="onSearch" v-model="searchValue"></v-text-field>
-        <v-btn elevation="2" @click="onSearch"
-        >Search
-        </v-btn>
+        <v-text-field label="Enter package name" @keyup.enter.native="onSearch" v-model="searchValue"></v-text-field>
+        <v-btn elevation="2" @click="onSearch">Search</v-btn>
     </div>
 </template>
 
