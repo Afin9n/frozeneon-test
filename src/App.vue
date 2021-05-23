@@ -2,7 +2,7 @@
     <v-app>
         <div class="page">
             <div class="container">
-                <Search data-app></Search>
+                <Search></Search>
                 <Table></Table>
             </div>
             <Footer></Footer>
@@ -17,16 +17,11 @@
 
     export default {
         name: 'App',
-
         components: {
             Footer,
             Table,
             Search,
-        },
-
-        data: () => ({
-            //
-        }),
+        }
     };
 </script>
 

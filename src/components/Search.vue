@@ -3,15 +3,13 @@
         <v-text-field ref="search" label="Enter package name" @keyup.enter.native="onSearch"
                       v-model="searchValue"></v-text-field>
         <v-btn elevation="2" @click="onSearch">Search</v-btn>
-
         <v-snackbar
                 v-model="showAlert"
                 :timeout="timeout"
                 color="red"
                 absolute
                 right
-                top
-        >
+                top >
             {{ text }}
         </v-snackbar>
     </div>

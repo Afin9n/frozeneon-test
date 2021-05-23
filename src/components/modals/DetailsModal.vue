@@ -2,7 +2,7 @@
     <v-row justify="center">
         <v-dialog
                 v-model="dialogState"
-                width="1000px">
+                :width="modalWidth">
             <v-card>
                 <v-card-title>
                     <span class="headline">Detail package info</span>
@@ -20,7 +20,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr v-for="item in packageFile" :key="item.name">
+                            <tr v-for="(item, index) in packageFile" :key="index">
                                 <td>{{ item.type }}</td>
                                 <td>{{ item.name }}</td>
                                 <td>{{ item.hash }}</td>
@@ -50,7 +50,9 @@
     export default {
         name: "DetailsModal",
         data() {
-            return {}
+            return {
+                modalWidth: '1000px'
+            }
         },
         props: ['dialog'],
         computed: {

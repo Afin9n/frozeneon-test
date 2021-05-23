@@ -4,7 +4,7 @@
                 @click:row="openDetailsModal"
                 :headers="headers"
                 :items="versions"
-                :items-per-page="10"
+                :items-per-page="itemsPerPage"
                 class="package-table">
         </v-data-table>
         <DetailsModal @dialogClose="dialogClose" :dialog="dialog"></DetailsModal>
@@ -26,7 +26,8 @@
                     { text: 'Name', value: 'name', align: 'left', width: '50%' },
                     { text: 'Version', value: 'version', align: 'left' },
                 ],
-                dialog: false
+                dialog: false,
+                itemsPerPage: 10,
             }
         },
         components:{

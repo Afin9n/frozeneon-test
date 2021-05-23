@@ -8,7 +8,7 @@ export default {
         state.versions = data.versions.map((version) => {
             return {
                 name: data.searchValue,
-                version: version
+                version
             }
         })
     },
