@@ -1,2 +1,3 @@
 export const FETCH_PACKAGE = 'FETCH_PACKAGE';
 export const FETCH_VERSIONS = 'FETCH_VERSIONS';
+export const SAVE_SEARCH = 'SAVE_SEARCH';

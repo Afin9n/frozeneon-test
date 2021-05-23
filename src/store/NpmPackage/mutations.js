@@ -12,4 +12,7 @@ export default {
             }
         })
     },
+    [types.SAVE_SEARCH]: (state, searchValue) => {
+        state.searchValue = searchValue
+    }
 }

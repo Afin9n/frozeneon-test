@@ -11,6 +11,7 @@ export default {
                     return response.json()
                 })
                 .then((data) => {
+                    commit(types.SAVE_SEARCH, params);
                     if (data.versions) {
                         commit(types.FETCH_VERSIONS, {searchValue:params, versions: data.versions});
                     } else {

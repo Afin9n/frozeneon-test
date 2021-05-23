@@ -1,4 +1,5 @@
 export default {
     packageFile: [],
-    versions: []
+    versions: [],
+    searchValue: ''
 }
