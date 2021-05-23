@@ -23,7 +23,7 @@
         data() {
             return {
                 headers: [
-                    { text: 'Name', value: 'name', align: 'left' },
+                    { text: 'Name', value: 'name', align: 'left', width: '50%' },
                     { text: 'Version', value: 'version', align: 'left' },
                 ],
                 dialog: false

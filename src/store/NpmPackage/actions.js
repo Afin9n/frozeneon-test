@@ -5,6 +5,9 @@ export default {
         return new Promise((resolve, reject) => {
             fetch(`https://data.jsdelivr.com/v1/package/npm/${params}`)
                 .then((response) => {
+                    if (!response.ok) {
+                        throw new Error('')
+                    }
                     return response.json()
                 })
                 .then((data) => {
@@ -15,9 +18,8 @@ export default {
                     commit(types.FETCH_PACKAGE, data.files);
                     resolve();
                 })
-                .catch(err => {
-                    console.error(err);
-                    reject()
+                .catch(() => {
+                    reject();
                 })
         })
     },
